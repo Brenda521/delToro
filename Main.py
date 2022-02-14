@@ -5,7 +5,6 @@ import ListaVentas
 import Clientes
 import ListaClientes 
 import DetalleVenta 
-import ListaDetaVentas 
 import ClaseJSONArticulos
 import ClaseJSONClientes
 import pymongo
@@ -17,7 +16,6 @@ from datetime import datetime
 listArt = ListaArticulos.Lista_Articulos()
 listCli = ListaClientes.Lista_Clientes()
 listVen = ListaVentas.Lista_Venta()
-listDetVen = ListaDetaVentas.Lista_Detalle_de_Venta()
 
 #METODOS JSON ARTICULOS
 listArt.abrirJson()
@@ -117,7 +115,8 @@ def borrarClientes():
 def agregarVenta():
     id_venta= int(len(listVen.Lista_Venta)) + 1
     subtotalv = 0.0
-    subtotal = 0.0 
+    subtotal = 0.0
+    detalles=[]
     verClientes()
     idCli=int(input("Inserte la ID del cliente: ")) 
     print("-----Agregar Articulos-----")      
@@ -127,14 +126,13 @@ def agregarVenta():
         id_art=int(input("Inserte la ID del articulo: "))
         for k in range(len(listArt.Lista_Art)):
             if id_art == listArt.Lista_Art[k]._id:
-                arti = id_art
                 cant = int(input("Ingrese la cantidad: "))
                 arcant=float(listArt.Lista_Art[k].precio)
                 subtotal=float(cant * arcant)
                 iva=float(subtotal * 0.16) 
                 total=float(iva + subtotal)
                 agArt = DetalleVenta.Detalle_de_Venta( id_art, cant, total, id_venta,arcant,iva, subtotal)
-                listDetVen.agregarVentaPorProducto(agArt) 
+                detalles.append(agArt)
         subtotalv += subtotal
         seguir=input("¿Desea agregar otro articulo?")
     fecha = str(datetime.today().strftime('%Y-%m-%d %H:%M'))
@@ -146,7 +144,7 @@ def agregarVenta():
     print("Subtotal: $" + str(subtotal2))
     print("IVA: $" + str(IVA))
     print("Total: $" + str(totalv))
-    ventaAg = Ventas.Ventas(id_venta, idCli, fecha, subtotal2, IVA, totalv, listDetVen.Lista_Detalle_Venta)
+    ventaAg = Ventas.Ventas(id_venta, idCli, fecha, subtotal2, IVA, totalv, detalles)
     listVen.agregarVenta(ventaAg)
  
     
@@ -159,9 +157,7 @@ def verVentas():
         clien = str(listVen.Lista_Venta[i].clien) 
         fech = str(listVen.Lista_Venta[i].fech)
         print("-----Articulos-----")
-        #print(len(listVen.Lista_Venta[2].listaven))
         for x in listVen.Lista_Venta[i].listaven:
-            id_art = str(x.id_art) 
             cant = str (x.cant)
             subtotalf =str(x.subtotal)
             ivaf = str(x.iva)
@@ -170,7 +166,6 @@ def verVentas():
             print("Subtotal: $" + subtotalf)
             print("IVA : $" + ivaf)
             print("Total : $" + totalf)
-            #print(type(x))
         print("---------------------------------------------------------------------------------------------------")  
         subtotal  = str(listVen.Lista_Venta[i].subtotal2)     
         IVA = str(listVen.Lista_Venta[i].IVA)
@@ -237,4 +232,4 @@ while True:
         break
 
 listVen.GuardarJson() 
-listVen.guardarBasedatos() 
+#listVen.guardarBasedatos() 
