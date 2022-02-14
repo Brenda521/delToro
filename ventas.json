@@ -1,0 +1,179 @@
+[
+    {
+        "_id": 1,
+        "clien": 4,
+        "fech": "2022-02-13 21:55",
+        "IVA": 42.0,
+        "total": 6.72,
+        "subtotal2": 48.72,
+        "listaven": [
+            {
+                "id_art": 1,
+                "cant": 3,
+                "total": 48.72,
+                "id_venta": 1,
+                "arcant": 14.0,
+                "iva": 6.72,
+                "subtotal": 42.0
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "clien": 2,
+        "fech": "2022-02-13 21:58",
+        "IVA": 8176.0,
+        "total": 59275.99999999999,
+        "subtotal2": 51100.0,
+        "listaven": [
+            {
+                "id_art": 2,
+                "cant": 3,
+                "total": 59160.0,
+                "id_venta": 2,
+                "arcant": 17000.0,
+                "iva": 8160.0,
+                "subtotal": 51000.0
+            },
+            {
+                "id_art": 4,
+                "cant": 1,
+                "total": 116.0,
+                "id_venta": 2,
+                "arcant": 100.0,
+                "iva": 16.0,
+                "subtotal": 100.0
+            }
+        ]
+    },
+    {
+        "_id": 3,
+        "clien": 1,
+        "fech": "2022-02-13 21:59",
+        "IVA": 3200.0,
+        "total": 23200.0,
+        "subtotal2": 20000.0,
+        "listaven": [
+            {
+                "id_art": 2,
+                "cant": 3,
+                "total": 59160.0,
+                "id_venta": 2,
+                "arcant": 17000.0,
+                "iva": 8160.0,
+                "subtotal": 51000.0
+            },
+            {
+                "id_art": 4,
+                "cant": 1,
+                "total": 116.0,
+                "id_venta": 2,
+                "arcant": 100.0,
+                "iva": 16.0,
+                "subtotal": 100.0
+            },
+            {
+                "id_art": 7,
+                "cant": 2,
+                "total": 23200.0,
+                "id_venta": 3,
+                "arcant": 10000.0,
+                "iva": 3200.0,
+                "subtotal": 20000.0
+            }
+        ]
+    },
+    {
+        "_id": 4,
+        "clien": 4,
+        "fech": "2022-02-13 22:00",
+        "IVA": 57.6,
+        "total": 417.59999999999997,
+        "subtotal2": 360.0,
+        "listaven": [
+            {
+                "id_art": 2,
+                "cant": 3,
+                "total": 59160.0,
+                "id_venta": 2,
+                "arcant": 17000.0,
+                "iva": 8160.0,
+                "subtotal": 51000.0
+            },
+            {
+                "id_art": 4,
+                "cant": 1,
+                "total": 116.0,
+                "id_venta": 2,
+                "arcant": 100.0,
+                "iva": 16.0,
+                "subtotal": 100.0
+            },
+            {
+                "id_art": 7,
+                "cant": 2,
+                "total": 23200.0,
+                "id_venta": 3,
+                "arcant": 10000.0,
+                "iva": 3200.0,
+                "subtotal": 20000.0
+            },
+            {
+                "id_art": 5,
+                "cant": 3,
+                "total": 417.6,
+                "id_venta": 4,
+                "arcant": 120.0,
+                "iva": 57.6,
+                "subtotal": 360.0
+            }
+        ]
+    },
+    {
+        "_id": 5,
+        "clien": 2,
+        "fech": "2022-02-13 22:06",
+        "IVA": 522.0,
+        "total": 450.0,
+        "subtotal2": 72.0,
+        "listaven": [
+            {
+                "id_art": 3,
+                "cant": 3,
+                "total": 522.0,
+                "id_venta": 5,
+                "arcant": 150.0,
+                "iva": 72.0,
+                "subtotal": 450.0
+            }
+        ]
+    },
+    {
+        "_id": 6,
+        "clien": 3,
+        "fech": "2022-02-13 22:07",
+        "IVA": 2752.0,
+        "total": 19952.0,
+        "subtotal2": 17200.0,
+        "listaven": [
+            {
+                "id_art": 2,
+                "cant": 1,
+                "total": 19720.0,
+                "id_venta": 6,
+                "arcant": 17000.0,
+                "iva": 2720.0,
+                "subtotal": 17000.0
+            },
+            {
+                "id_art": 4,
+                "cant": 2,
+                "total": 232.0,
+                "id_venta": 6,
+                "arcant": 100.0,
+                "iva": 32.0,
+                "subtotal": 200.0
+            }
+        ]
+    }
+]

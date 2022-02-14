@@ -1,0 +1,50 @@
+[
+    {
+        "_id": 1,
+        "clave": "012",
+        "nombre": "soda",
+        "precio": 14.0
+    },
+    {
+        "_id": 2,
+        "clave": "123",
+        "nombre": "Laptop Lenovo",
+        "precio": 17000.0
+    },
+    {
+        "_id": 3,
+        "clave": "456",
+        "nombre": "Audifonos",
+        "precio": 150.0
+    },
+    {
+        "_id": 4,
+        "clave": "567",
+        "nombre": "Mouse",
+        "precio": 100.0
+    },
+    {
+        "_id": 5,
+        "clave": "876",
+        "nombre": "Cargador",
+        "precio": 120.0
+    },
+    {
+        "_id": 6,
+        "clave": "876",
+        "nombre": "Cargador",
+        "precio": 120.0
+    },
+    {
+        "_id": 7,
+        "clave": "526",
+        "nombre": "Telefono",
+        "precio": 10000.0
+    },
+    {
+        "_id": 8,
+        "clave": "444",
+        "nombre": "Teclado",
+        "precio": 250.0
+    }
+]
